@@ -1,0 +1,21 @@
+{
+  "name": "yajl",
+  "version": "1.0.12.bm",
+  "license": "ISC",
+  "summary": "Yet Another JSON Library - A Portable JSON parsing and serialization library in ANSI C.",
+  "homepage": "http://lloyd.github.com/yajl/",
+  "authors": {
+    "Lloyd Hilaiel": "lloyd@hilaiel.com"
+  },
+  "source": {
+    "git": "https://github.com/werner77/yajl.git",
+    "commit": "d35b032f2b2949d4e3ca6338c2e71babc7aefc6c"
+  },
+  "source_files": [
+    "src/*.{h,c}",
+    "build/yajl-1.0.12/include/yajl"
+  ],
+  "preserve_paths": "**/*",
+  "prepare_command": "                        ./configure\n                        mv COPYING LICENSE\n",
+  "requires_arc": false
+}
