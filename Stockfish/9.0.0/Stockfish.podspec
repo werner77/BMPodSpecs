@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                      = "Stockfish"
-    s.version                   = "8.0.0"
+    s.version                   = "9.0.0"
     s.summary                   = "A free UCI chess engine derived from Glaurung 2.1."
     s.homepage                  = "https://github.com/official-stockfish/Stockfish"
     s.license                   = { :type => "GPL, Version 3.0" }
@@ -12,5 +12,6 @@ Pod::Spec.new do |s|
     s.source                    = { :git => "https://github.com/official-stockfish/Stockfish.git", :commit => "7dd1f4a7c027832889c2e20c2131bab9d64c8095" }
     s.source_files              = "src/**/*.{h,c,cpp}"
     s.exclude_files		= "src/main.cpp"
+    s.compiler_flags		= "-Wno-shorten-64-to-32"
 end
 
