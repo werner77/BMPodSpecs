@@ -10,11 +10,7 @@ Pod::Spec.new do |s|
     s.watchos.deployment_target = '2.0'
     s.tvos.deployment_target    = '9.0'
     s.source                    = { :git => "https://github.com/official-stockfish/Stockfish.git", :commit => "7dd1f4a7c027832889c2e20c2131bab9d64c8095" }
-
-    
-
-    s.source_files              = "src/*.{h,c,cpp}"
+    s.source_files              = "src/**/*.{h,c,cpp}"
     s.exclude_files		= "src/main.cpp"
-    
 end
 
