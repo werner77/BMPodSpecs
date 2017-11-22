@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
     s.tvos.deployment_target    = '9.0'
     s.source                    = { :git => "https://github.com/werner77/Sage.git", :commit=> "394033bf2cc1d70fce698aea8eb4ddffca4deda6" }
     s.source_files              = "Sources/*.swift"
-    s.compiler_flags		= "-Wno-deprecated-declarations"
     s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.2' }
 end
 
